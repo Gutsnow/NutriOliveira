@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap');
+        body {
+            font-family: 'Montserrat', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+#gallery-page {
+    border-bottom: 5px solid green;
+}
+
+.before-after-grid {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .before-after-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+.athlete-grid {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .athlete-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}

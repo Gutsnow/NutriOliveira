@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap');
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+    background-color: #ffffffd7;
+}
+.hero-gradient {
+    background: linear-gradient(135deg, rgba(0,0,0,0.8) 0%, rgba(3, 84, 33, 0.8) 100%);
+}
+.btn-hover-effect:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+.btn-hover-effect {
+    transition: all 0.3s;
+}
+
+#dif{
+  object-fit: cover;
+  object-position: 0px;
+}
+
+.descricoes{
+  font-size: 25px;
+}
+
+#work-details{
+  background: linear-gradient(135deg, rgba(50, 49, 49, 0.8) 0%, rgba(225, 225, 225, 0.8) 100%);
+  border-bottom: 1px solid rgb(0, 210, 0);
+  border-top: 1px solid rgb(0, 210, 0);
+}
+
+
+/* Ajuste para as setas e paginação */
+ 
+
+/* Importante:
+- 'display: flex' centraliza o card no slide (bom para mobile).
+- 'height: auto' permite que o slide cresça se o card for alto 
+  (como o seu plano 'Premium', que tem mais itens).
+*/
+.pricingSwiper .swiper-slide {
+display: flex;
+justify-content: center;
+align-items: flex-start; /* Alinha no topo */
+height: auto;
+padding-bottom: 2.5rem; /* Espaço para a sombra e paginação */
+padding-top: 1.5rem; /* Espaço para a tag 'Mais Popular' */
+}
+
+.imgAp{
+    /* Estilos base (mobile-first) */
+
+    
+    
+  /* rounded-full */
+  border-radius: 20px;
+  
+  /* w-64 (16rem, ou 256px) */
+  width: 450px;
+  
+  /* h-64 (16rem, ou 256px) */
+  height: 450px;
+  
+  /* object-cover */
+  object-fit: cover;
+
+       /* mantém a proporção, corta o excesso */
+  object-position: left 5%;
+  
+  /* border-2 */
+  border-width: 2px;
+  
+  /* border-primary (assume uma Variável CSS) */
+  border-color: var(--primary);
+  
+  /* shadow-xl */
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+.imagens{
+   
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.imagens.secondary{
+  object-fit: cover;
+  object-position: bottom;
+}
+
+/* Estilos para: <section id="gallery" class="py-20 bg-white"> */
+#gallery {
+  /* py-20 */
+  padding-top: 5rem;    /* 80px */
+  padding-bottom: 5rem; /* 80px */
+  
+  /* bg-white */
+  background-color: #fff;
+}
+
+.cmmt{
+  border: 2px solid rgb(0, 210, 0);
+  border-radius: 10px;
+  
+}
+
+/* Estilos para: <div class="container mx-auto px-4"> */
+.container {
+  /* width: 100%; (implícito) */
+  width: 100%;
+  
+  /* mx-auto */
+  margin-left: auto;
+  margin-right: auto;
+  
+  /* px-4 */
+  padding-left: 1rem;  /* 16px */
+  padding-right: 1rem; /* 16px */
+}
+
+/* O 'container' do Tailwind também define max-widths responsivos.
+  Você precisa incluir estas media queries para que ele funcione corretamente.
+*/
+@media (min-width: 640px) {
+  .container { max-width: 640px; }
+}
+@media (min-width: 768px) {
+  .container { max-width: 768px; }
+}
+@media (min-width: 1024px) {
+  .container { max-width: 1024px; }
+}
+@media (min-width: 1280px) {
+  .container { max-width: 1280px; }
+}
+@media (min-width: 1536px) {
+  .container { max-width: 1536px; }
+}
+
+/* Estilos para: <h2 class="text-3xl md:text-4xl ..."> */
+#gallery h2 {
+  /* text-3xl */
+  font-size: 1.875rem;  /* 30px */
+  line-height: 2.25rem; /* 36px */
+  
+  /* font-bold */
+  font-weight: 700;
+  
+  /* text-center */
+  text-align: center;
+  
+  /* mb-16 */
+  margin-bottom: 4rem; /* 64px */
+  
+  /* uppercase */
+  text-transform: uppercase;
+  
+  /* tracking-tight */
+  letter-spacing: -0.025em;
+}
+
+/* Estilos para: <div class="grid grid-cols-1 md:grid-cols-3 gap-6"> */
+.grid-container { /* Renomeei a classe para este exemplo */
+  /* grid */
+  display: grid;
+  
+  /* grid-cols-1 */
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  
+  /* gap-6 */
+  gap: 1.5rem; /* 24px */
+}
+
+/* Estilos para: <div class="relative group ..."> */
+.card-item { /* Renomeei a classe para este exemplo */
+  /* relative */
+  position: relative;
+  
+  /* group (classe de marcação, sem CSS direto) */
+  
+  /* overflow-hidden */
+  overflow: hidden;
+  
+  /* rounded-lg */
+  border-radius: 0.5rem; /* 8px */
+  
+  /* shadow-lg */
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+/* Estilos para: <img src="..." class="w-full h-80 ..."> */
+.card-item img {
+  /* w-full */
+  width: 100%;
+  
+  /* h-80 */
+  height: 20rem; /* 320px */
+  
+  /* object-cover */
+  object-fit: cover;
+  
+  /* transition-transform duration-500 */
+  transition-property: transform;
+  transition-duration: 500ms;
+}
+
+/* Efeito Hover: group-hover:scale-110 */
+.card-item:hover img {
+  /* scale-110 */
+  transform: scale(1.1);
+}
+
+/* Estilos para: <div class="absolute inset-0 ..."> (Overlay) */
+.card-overlay { /* Renomeei a classe para este exemplo */
+  /* absolute */
+  position: absolute;
+  
+  /* inset-0 */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  
+  /* bg-black bg-opacity-50 */
+  background-color: rgb(0 0 0 / 0.5); /* Preto com 50% de opacidade */
+  
+  /* flex items-center justify-center */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  /* opacity-0 */
+  opacity: 0;
+  
+  /* transition-opacity duration-300 */
+  transition-property: opacity;
+  transition-duration: 300ms;
+}
+
+/* Efeito Hover: group-hover:opacity-100 */
+.card-item:hover .card-overlay {
+  /* opacity-100 */
+  opacity: 1;
+}
+
+/* Estilos para: <p class="text-white text-xl ..."> */
+.card-overlay p {
+  /* text-white */
+  color: #fff;
+  
+  /* text-xl */
+  font-size: 1.25rem;  /* 20px */
+  line-height: 1.75rem; /* 28px */
+  
+  /* font-bold */
+  font-weight: 700;
+  
+  /* text-center */
+  text-align: center;
+  
+  /* px-4 */
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* --- Media Queries (Responsivo) --- */
+
+/* Breakpoint 'md' (768px) */
+@media (min-width: 768px) {
+  
+  /* Estilos para: md:text-4xl */
+  #gallery h2 {
+    font-size: 2.25rem;  /* 36px */
+    line-height: 2.5rem; /* 40px */
+  }
+  
+  /* Estilos para: md:grid-cols-3 */
+  .grid-container {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+
+/* Estilos aplicados a partir do breakpoint 'md' (768px) */
+@media (min-width: 768px) {
+  .meu-elemento {
+    /* md:w-80 (20rem, ou 320px) */
+    width: 20rem;
+    
+    /* md:h-80 (20rem, ou 320px) */
+    height: 20rem;
+  }
+}

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrioliveira | Galeria</title>
+    <meta name="description" content="Galeria de resultados e atletas">
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./galeria.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#15803d', // Dark green
+                        secondary: '#000000', // Black
+                        accent: '#f0fdf4', // Light green
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white text-gray-800">
+    <!-- WhatsApp Fixed Button -->
+    <a href="https://api.whatsapp.com/send?phone=5519981334362&text=Ol%C3%A1,%20eu%20vim%20atrav%C3%A9s%20do%20seu%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20seu%20trabalho." class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg z-50 transition-all duration-300 transform hover:scale-110">
+        <i data-feather="message-circle"></i>
+    </a>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-40">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-secondary">
+                <span class="text-primary">NUTRI</span>OLIVEIRA
+            </a>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="font-semibold hover:text-primary">HOME</a>
+                <a href="index.html" class="font-semibold hover:text-primary">SOBRE</a>
+                <a href="index.html" class="font-semibold hover:text-primary">GALERIA</a>
+                <a href="index.html" class="font-semibold hover:text-primary">DEPOIMENTOS</a>
+                <a href="index.html" class="font-semibold hover:text-primary">CONTATO</a>
+            </div>
+            <div class="md:hidden">
+                <i data-feather="menu" class="cursor-pointer" onclick="toggleMobileMenu()"></i>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white px-4 pb-4">
+            <a href="index.html" class="block py-2 font-semibold hover:text-primary">HOME</a>
+            <a href="index.html" class="block py-2 font-semibold hover:text-primary">SOBRE</a>
+            <a href="index.html" class="block py-2 font-semibold hover:text-primary">GALERIA</a>
+            <a href="index.html" class="block py-2 font-semibold hover:text-primary">DEPOIMENTOS</a>
+            <a href="index.html" class="block py-2 font-semibold hover:text-primary">CONTATO</a>
+        </div>
+    </nav>
+
+    <!-- Main content will go here -->
+
+    <section id="before-after" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 uppercase tracking-tight">ANTES E DEPOIS</h2>
+            <div class="before-after-grid">
+                <!-- Item Antes e Depois 1 -->
+                <div class="bg-gray-50 p-4 rounded-lg shadow-md">
+                    <div class="flex flex-col sm:flex-row gap-4 mb-4">
+                        <img id="dif" src="./img/WhatsApp Image 2025-11-20 at 09.07.34 (2).jpeg" alt="Antes" class="w-full sm:w-1/2 h-64 object-cover rounded-lg">
+                        <img src="./img/WhatsApp Image 2025-11-20 at 09.07.34 (1).jpeg" alt="Depois" class="w-full sm:w-1/2 h-64 object-cover rounded-lg">
+                    </div>
+                    <p class="text-center text-gray-700">Atleta em Preparação.</p>
+                </div>
+
+
+                <div class="bg-gray-50 p-4 rounded-lg shadow-md">
+                    <div class="flex flex-col sm:flex-row gap-4 mb-4">
+                        <img src="./img/WhatsApp Image 2025-11-13 at 14.25.58.jpeg" alt="Antes" class="w-full sm:w-1/2 h-64 object-cover rounded-lg">
+                        <img src="./img/WhatsApp Image 2025-11-13 at 14.25.58 (2).jpeg" alt="Depois" class="w-full sm:w-1/2 h-64 object-cover rounded-lg">
+                    </div>
+                    <p class="text-center text-gray-700">Foco em recomposição corporal.</p>
+                </div>
+                <!-- Item Antes e Depois 2 -->
+                <div class="bg-gray-50 p-4 rounded-lg shadow-md">
+                    <div class="flex flex-col sm:flex-row gap-4 mb-4">
+                        <img src="./img/WhatsApp Image 2025-11-09 at 17.04.39 (1).jpeg" alt="Antes" class="w-full sm:w-1/2 h-64 object-cover rounded-lg">
+                        <img src="./img/WhatsApp Image 2025-11-09 at 17.04.39.jpeg" alt="Depois" class="w-full sm:w-1/2 h-64 object-cover rounded-lg">
+                    </div>
+                    <p class="text-center text-gray-700">Foco em recomposição corporal.</p>
+                </div>
+                <!-- Você pode adicionar mais itens aqui -->
+                 <div class="bg-gray-50 p-4 rounded-lg shadow-md">
+                    <div class="flex flex-col sm:flex-row gap-4 mb-4">
+                        <img src="./img/WhatsApp Image 2025-11-16 at 13.50.05.jpeg" alt="Antes" class="w-full sm:w-1/2 h-64 object-cover rounded-lg">
+                        <img src="./img/WhatsApp Image 2025-11-16 at 13.50.06.jpeg" alt="Depois" class="w-full sm:w-1/2 h-64 object-cover rounded-lg">
+                    </div>
+                    <p class="text-center text-gray-700">Atleta de boxe em Preparação (ganho de massa).</p>
+                </div>
+
+                <div class="bg-gray-50 p-4 rounded-lg shadow-md">
+                    <div class="flex flex-col sm:flex-row gap-4 mb-4">
+                        <img src="./img/WhatsApp Image 2025-11-16 at 13.49.22.jpeg" alt="Antes" class="w-full sm:w-1/2 h-64 object-cover rounded-lg">
+                        <img src="./img/WhatsApp Image 2025-11-16 at 13.49.23.jpeg" alt="Depois" class="w-full sm:w-1/2 h-64 object-cover rounded-lg">
+                    </div>
+                    <p class="text-center text-gray-700">Foco em recomposição corporal.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="athletes" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 uppercase tracking-tight">ATLETAS COMPETITIVOS</h2>
+            <div class="athlete-grid">
+                <!-- Atleta 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-center">
+                    <img src="./img/WhatsApp Image 2025-11-07 at 20.10.10.jpeg" alt="Atleta competitivo" class="w-full h-80 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-bold mb-2">Kaique Leblanc</h3>
+                    <p class="text-gray-700">Atleta em preparação para campionato de fisiculturismo natural.</p>
+                </div>
+                <!-- Atleta 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-center">
+                    <img src="./img/WhatsApp Image 2025-11-20 at 09.24.36.jpeg" alt="Atleta competitivo" class="w-full h-80 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-bold mb-2">Nicolas Davi</h3>
+                    <p class="text-gray-700">Atleta em preparação para campionato de fisiculturismo natural com destaque Overall.</p>
+                </div>
+                <!-- Atleta 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-center">
+                    <img src="./img/WhatsApp Image 2025-11-07 at 20.02.35.jpeg" alt="Atleta competitivo" class="w-full h-80 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-bold mb-2">Gustavo Alegretti</h3>
+                    <p class="text-gray-700">Atleta em preparação para campionato de fisiculturismo natural.</p>
+                </div>
+                <!-- Você pode adicionar mais atletas aqui -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <a href="index.html" class="text-2xl font-bold">
+                        <span class="text-primary">NUTRI</span>OLIVEIRA
+                    </a>
+                    <p class="mt-2 text-gray-400">Nutrição esportiva de alta performance</p>
+                </div>
+                <div class="flex flex-col items-center md:items-end">
+                    <p class="mb-4">© 2025 NutriOliveira. Todos os direitos reservados.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i data-feather="instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i data-feather="facebook"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle mobile menu
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Initialize feather icons
+        feather.replace();
+    </script>
+</body>
+</html>
